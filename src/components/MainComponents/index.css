@@ -1,0 +1,7 @@
+.header{
+    background: linear-gradient(black 70%,rgb(64, 64, 64) 90%,rgb(192, 192, 192) 99%);
+}
+.footer{
+    background: linear-gradient(black 70%,rgb(64, 64, 64) 90%,rgb(192, 192, 192) 99%);
+    background: linear-gradient(rgb(192, 192, 192) 1%,rgb(64, 64, 64) 9%,black 29%);
+}

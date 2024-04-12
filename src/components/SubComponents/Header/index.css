@@ -1,0 +1,12 @@
+.link-element {
+    text-decoration: underline;
+    text-decoration-thickness: 0;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255,255,255,0);
+    transition: all 150ms;
+}
+
+.link-element:hover{
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
