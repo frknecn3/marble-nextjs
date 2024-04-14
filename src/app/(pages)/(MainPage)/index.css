@@ -4,3 +4,23 @@
     background-size: cover;
     background-position: 0;
 }
+
+.main-image-bottom{
+    min-height: 100vh;
+    background-image: url('/images/MainPage1.png') ;
+    background-size: cover;
+    background-position: 0;
+}
+
+.marble-grid{
+    grid-template-columns: repeat(auto-fill,500px,1fr);
+}
+
+@media screen and (min-width:1024px) {
+    .marble-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    
+}
+
