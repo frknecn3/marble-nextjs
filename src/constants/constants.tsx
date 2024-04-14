@@ -54,7 +54,7 @@ export const marbleTypes = [
     },
 ]
 
-export const longText = `Porta Marble olarak, mermerin doğallığını ve zarafetini dünya genelinde müşterilerimize sunmayı amaçlayan bir dış ticaret firmasıyız. Mermerin eşsiz güzellik ve dayanıklılığını, yaratıcı tasarımlarla birleştirerek iç ve dış mekanlara özgün bir dokunuş katıyoruz
+export const longText = `Marble olarak, mermerin doğallığını ve zarafetini dünya genelinde müşterilerimize sunmayı amaçlayan bir dış ticaret firmasıyız. Mermerin eşsiz güzellik ve dayanıklılığını, yaratıcı tasarımlarla birleştirerek iç ve dış mekanlara özgün bir dokunuş katıyoruz
 
 Köklü bir geleneğe sahip mermer sektöründe, mermer ocaklarımızın sağladığı benzersiz kaynaklarla işimizi özelleştiriyoruz. Mermer ocaklarımız, en kaliteli ve çeşitli mermer yataklarının bulunduğu bölgelerde yer almaktadır. Bu sayede, doğal taşın farklı renkleri, desenleri ve dokularını geniş bir yelpazede müşterilerimize sunabiliyoruz
 
