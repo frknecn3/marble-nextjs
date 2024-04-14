@@ -16,8 +16,8 @@ const TiltCard = ({item,i}:Props) => {
 
 
 
-    const rotateX=useTransform(x,[-0.5,0.5],["-20.5deg",'20.5deg'])
-    const rotateY=useTransform(y,[-0.5,0.5],["-20deg",'20.5deg'])
+    const rotateX=useTransform(x,[-0.5,0.5],["-10deg",'10.5deg'])
+    const rotateY=useTransform(y,[-0.5,0.5],["-10deg",'10.5deg'])
 
     const handleMouseMove: MouseEventHandler<HTMLDivElement> = (e) => { 
         const target = e.target as HTMLDivElement;
@@ -29,8 +29,8 @@ const TiltCard = ({item,i}:Props) => {
         const mouseX = e.clientX - rect.left
         const mouseY = e.clientY - rect.top
 
-        const xpct = mouseX/width -0.5
-        const ypct = mouseY/height -0.5
+        const xpct = mouseX/width
+        const ypct = mouseY/height
 
         x.set(xpct)
         y.set(ypct)
