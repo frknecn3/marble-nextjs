@@ -14,12 +14,14 @@
 
 .marble-grid{
     grid-template-columns: repeat(auto-fill,500px,1fr);
+    gap: 10px;
 }
 
 @media screen and (min-width:1024px) {
     .marble-grid{
+        place-items: center;
         grid-template-columns: 1fr 1fr 1fr;
-        
+        gap: 40px;
     }
     
 }

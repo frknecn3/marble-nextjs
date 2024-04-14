@@ -46,8 +46,8 @@ const TiltCard = ({item,i}:Props) => {
     }
 
     return (
-        <MotionDiv whileInView={{opacity:[0,1]}} viewport={{ once: true, amount: 0 }} transition={{duration:1,delay:0.3*i}} style={{rotateX,rotateY}} className='hover:shadow shadow-white hover:bg-[#0a0a0a] m-2 lg:m-10 border text-center p-2 lg:p-4 rounded-xl flex flex-col items-center justify-center w-[40vw] h-auto lg:w-[300px] gap-4' onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
-            <div className='w-[100px] h-[100px] object-contain overflow-hidden'><img src={item.photo} alt="" className='object-cover' /></div>
+        <MotionDiv whileInView={{opacity:[0,1]}} viewport={{ once: true, amount: 0 }} transition={{duration:1,delay:0.3*i}} style={{rotateX,rotateY}} className='hover:shadow shadow-white hover:bg-[#0a0a0a] lg:m-10 border text-center p-2 lg:p-4 rounded-xl flex flex-col items-center justify-center w-[40vw] h-auto lg:w-3/4 gap-4' onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}>
+            <div className='w-[150] h-[150px] lg:w-full lg:h-[400px] object-contain overflow-hidden'><img src={item.photo} alt="" className='object-cover' /></div>
             <span className='text-xl'>{item.name}</span>
       </MotionDiv>
     );
