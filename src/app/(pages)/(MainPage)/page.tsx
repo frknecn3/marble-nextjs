@@ -34,7 +34,7 @@ const MainPage = () => {
         transition={{ duration: 1 }} // Animation duration
         viewport={{ once: true, amount: 0 }}
         >
-          <pre className='text-2xl leading-8 font-sans whitespace-pre-wrap'>{longText}</pre>
+          <pre className='text-2xl leading-8 p-10 lg:p-0 font-sans whitespace-pre-wrap'>{longText}</pre>
         </MotionDiv>
         
         <MotionDiv className='w-full lg:w-1/4 p-10 lg:p-0 '
