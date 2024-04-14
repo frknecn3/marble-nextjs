@@ -10,7 +10,7 @@ const MainPage = () => {
   return (
     <div className='text-center'>
       
-    <div className='min-h-[100vh] relative'>
+    <div className='min-h-[100vh] p-10 relative'>
       <Hero />
 
       <div className="main-image absolute top-0 left-0 right-0 bottom-0 z-[-1]">
