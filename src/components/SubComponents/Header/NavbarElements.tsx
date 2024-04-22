@@ -12,15 +12,9 @@ type Props = {}
 
 const NavbarElements = (props: Props) => {
 
-  const [width,setWidth] = useState<number>(NaN)
-
-  useEffect(()=>{
-    setWidth(window.innerWidth)
-  },[])
   return (
     
-    width>768?
-      (<div className='p-20'>
+      (<div className='p-20 lg:block hidden'>
         <ul className='flex gap-10'>
             {NavbarElementsArray.map((element,i)=>(
 
@@ -29,7 +23,7 @@ const NavbarElements = (props: Props) => {
             </Link>
         ))}
         </ul>
-    </div>):''
+    </div>)
   )
 }
 
