@@ -18,7 +18,7 @@ const Contact = () => {
             </div>
             
             <div className='flex flex-col justify-between gap-4'>
-                <a target='_blank' href="https://wa.me/0000000001"
+                <a target='_blank' href="https://wa.me/00000000011"
                 className='text-3xl bg-green-500 p-4 rounded-xl flex gap-2 items-center'> 
                 <FaWhatsapp className='text-5xl' />
                 WHATSAPP
