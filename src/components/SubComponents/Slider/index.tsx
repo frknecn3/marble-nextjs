@@ -41,7 +41,7 @@ const Slider = ()=>{
         >
           {sliderImages.map((item,i)=>(
             <div className="flex justify-center p-1">
-              <img src={item} alt={`kitchen marble ${i}`} className="h-[80vh] border" />
+              <img src={item} key={i} alt={`kitchen marble ${i}`} className="h-[80vh] border" />
             </div>
               
           ))}
