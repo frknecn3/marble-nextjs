@@ -40,8 +40,8 @@ const Slider = ()=>{
           pauseOnHover={true}
         >
           {sliderImages.map((item,i)=>(
-            <div className="flex justify-center p-1">
-              <img src={item} key={i} alt={`kitchen marble ${i}`} className="h-[80vh] border" />
+            <div className="flex justify-center p-1" key={i}>
+              <img src={item}  alt={`kitchen marble ${i}`} className="h-[80vh] border" />
             </div>
               
           ))}
