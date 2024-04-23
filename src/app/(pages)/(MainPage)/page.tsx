@@ -4,7 +4,10 @@ import OpacityCover from '@/components/SubComponents/Main/OpacityCover'
 import { MotionDiv } from '@/utils/use-client'
 import Hero from '@/components/MainComponents/Hero'
 import { longText, marbleTypes } from '@/constants/constants'
-import TiltCard from '@/components/SubComponents/Main/TiltCard'
+import Portfolio from '@/components/MainComponents/Portfolio'
+import Slider from '@/components/SubComponents/Slider'
+
+
 
 const MainPage = () => {
   return (
@@ -18,11 +21,17 @@ const MainPage = () => {
       </div>
     </div>
 
-    <h1 className='pt-20 text-6xl'>PORTFOLYO</h1>
-
-    <div className='marble-grid p-10 w-full h-full grid place-items-center grid-cols-2 lg:grid-cols-3 border-b border-b-gray-500'>
-      {marbleTypes.map((item,i)=>(<TiltCard item={item} key={i} i={i}/>))}
+    <div className='relative'>
+      <h1 className='text-6xl py-20'>ZARİF TASARIMLAR</h1> 
+      <div className='flex justify-center gap-10 pb-40 items-center'>
+        <Slider />
+      </div>
+      <div className="secondary-image absolute top-0 left-0 right-0 bottom-0 z-[-1]">
+        <OpacityCover />
+      </div>
     </div>
+
+    <Portfolio />
 
 
 
@@ -43,6 +52,7 @@ const MainPage = () => {
         transition={{ duration: 1 }} // Animation duration
         viewport={{ once: true, amount: 0 }}
         >
+
           <img src="/images/longtext.jpg" alt="long text image" className='border-2 rounded-md border-white' />
         </MotionDiv>
 

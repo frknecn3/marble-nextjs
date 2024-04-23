@@ -4,6 +4,12 @@
     background-size: cover;
     background-position: 0;
 }
+.secondary-image{
+    min-height: 100vh;
+    background-image: url('/images/marbles/burdurbeige.jpg') ;
+    background-size: cover;
+    background-position: 0;
+}
 
 .main-image-bottom{
     min-height: 100vh;

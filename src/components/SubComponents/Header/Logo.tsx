@@ -10,8 +10,8 @@ const Logo = (props: Props) => {
   return (
     
     <Link href={'/'} className='ml-10 flex justify-between'>
-      <motion.div animate={{x:[-200,0],opacity:[0,100]}} transition={{duration:1}}  className='logo p-10 text-7xl font-extrabold'>
-          MARBLE
+      <motion.div animate={{x:[-200,0],opacity:[0,100]}} transition={{duration:1}}  className='logo p-10 text-4xl lg:text-7xl font-extrabold'>
+          PORTA MARBLE
       </motion.div>      
     </Link>
   )

@@ -54,6 +54,12 @@ export const marbleTypes = [
     },
 ]
 
+export const sliderImages = [
+    "/images/kitchen/1.jpg",
+    "/images/kitchen/2.jpg",
+    "/images/kitchen/3.jpg",
+]
+
 export const qna = [
     {
         q:"Türkiye dışına hizmet veriyor musunuz?",

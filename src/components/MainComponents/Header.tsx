@@ -15,6 +15,7 @@ const Header = (props: Props) => {
 
   return (
     <header className='header flex justify-between items-center border-b-[1px] border-gray-600 min-h-[10vh]'>
+        <div className='lg:hidden'/>
         <Logo/>
         <NavbarElements/>
         <Menu />
