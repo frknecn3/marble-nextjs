@@ -13,6 +13,10 @@ import Video from '@/components/MainComponents/Video'
 const MainPage = () => {
   return (
     <div className='text-center'>
+
+<div className='min-h-[100vh] pb-10 relative'>
+  {/* buraya random resim gelcek */}
+</div>
       
     <div className='min-h-[100vh] pb-10 relative'>
       <Hero />
