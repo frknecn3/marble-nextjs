@@ -49,16 +49,28 @@ export const marbleTypes = [
         photo:'/images/marbles/daisyblue.jpg'
     },
     {
-        name:'Grey Osmose',
+        name:'Grey Osmoe',
         photo:'/images/marbles/greyosmoe.jpg'
+    },
+    {
+        name:'Indigo Night',
+        photo:'/images/marbles/indigonight.jpg'
+    },
+    {
+        name:'Pasha White',
+        photo:'/images/marbles/pashawhite.jpg'
+    },
+    {
+        name:'Patara Beige',
+        photo:'/images/marbles/patarabeige.jpg'
     },
 ]
 
-export const sliderImages = [
-    "/images/kitchen/1.jpg",
-    "/images/kitchen/2.jpg",
-    "/images/kitchen/3.jpg",
-]
+export const sliderImages = [...Array(22)].map((item,i)=>
+    (`/images/slider/${i+1}.jpg`
+)
+
+)
 
 export const qna = [
     {

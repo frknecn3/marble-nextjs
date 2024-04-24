@@ -6,6 +6,7 @@ import Hero from '@/components/MainComponents/Hero'
 import { longText, marbleTypes } from '@/constants/constants'
 import Portfolio from '@/components/MainComponents/Portfolio'
 import Slider from '@/components/SubComponents/Slider'
+import Video from '@/components/MainComponents/Video'
 
 
 
@@ -13,7 +14,7 @@ const MainPage = () => {
   return (
     <div className='text-center'>
       
-    <div className='min-h-[100vh] p-10 relative'>
+    <div className='min-h-[100vh] pb-10 relative'>
       <Hero />
 
       <div className="main-image absolute top-0 left-0 right-0 bottom-0 z-[-1]">
@@ -23,7 +24,7 @@ const MainPage = () => {
 
     <div className='relative'>
       <h1 className='text-6xl py-20'>ZARİF TASARIMLAR</h1> 
-      <div className='flex justify-center gap-10 pb-40 items-center'>
+      <div className='flex justify-center gap-10 pb-40 items-center overflow-visible'>
         <Slider />
       </div>
       <div className="secondary-image absolute top-0 left-0 right-0 bottom-0 z-[-1]">
@@ -31,11 +32,12 @@ const MainPage = () => {
       </div>
     </div>
 
+    <Video />
+
+
     <Portfolio />
 
-
-
-
+    
     <div className='flex flex-col-reverse lg:flex-row justify-around items-center py-20 overflow-clip relative'>
         <MotionDiv className='w-full lg:w-2/4' 
         initial={{ opacity: 0, y: -40 }} // Initial state: invisible and positioned above

@@ -51,7 +51,7 @@ const TiltCard = ({item,i}:Props) => {
         className='tiltcard hover:bg-[#0a0a0a] lg:m-10 border text-center p-2 lg:p-4 rounded-xl flex flex-col items-center justify-center w-[40vw] h-[25vh] lg:h-auto lg:w-3/4 gap-4' 
         onMouseMove={handleMouseMove} 
         onMouseOut={handleMouseOut}>
-            <div className='w-[150] h-[150px] lg:w-full lg:h-[400px] object-contain overflow-hidden'><img src={item.photo} alt="" className='object-cover' /></div>
+            <div className='w-[150] h-[150px] lg:w-full lg:h-[400px] object-cover overflow-hidden'><img src={item.photo} alt="" className='object-cover w-full h-full' /></div>
             <span className='text-xl'>{item.name}</span>
       </MotionDiv>
     );
