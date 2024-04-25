@@ -3,7 +3,7 @@ import './index.css'
 import OpacityCover from '@/components/SubComponents/Main/OpacityCover'
 import { MotionDiv } from '@/utils/use-client'
 import Hero from '@/components/MainComponents/Hero'
-import { longText, marbleTypes } from '@/constants/constants'
+import { longText, marbleTypes, sliderImages } from '@/constants/constants'
 import Portfolio from '@/components/MainComponents/Portfolio'
 import Slider from '@/components/SubComponents/Slider'
 import Video from '@/components/MainComponents/Video'
@@ -14,8 +14,9 @@ const MainPage = () => {
   return (
     <div className='text-center'>
 
-<div className='min-h-[100vh] pb-10 relative'>
+<div className='h-[100vh] pb-5 relative w-full'>
   {/* buraya random resim gelcek */}
+  <img src={sliderImages[Math.floor((Math.random() * sliderImages.length))]} className='object-cover w-full h-full' alt="" />
 </div>
       
     <div className='min-h-[100vh] pb-10 relative'>
