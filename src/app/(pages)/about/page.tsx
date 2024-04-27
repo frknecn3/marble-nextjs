@@ -11,7 +11,8 @@ const AboutPage = (props: Props) => {
             <div className='w-1/3'>
                 <img src="/images/logo/pm1.jpg" className='rounded-xl' alt="" />
             </div>
-            <div className='w-2/3'>
+            <div className='w-2/3 flex flex-col gap-10'>
+                <h1 className='text-center text-5xl font-extrabold'>PORTA MARBLE</h1>
                 <p className=''>
                     {longText}
                 </p>

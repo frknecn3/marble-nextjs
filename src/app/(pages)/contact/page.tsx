@@ -4,9 +4,9 @@ import { CiMail } from 'react-icons/ci'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
 
-const Contact = () => {
+const Contact = ({long=true}:{long:boolean}) => {
   return (
-    <div className='flex flex-col lg:block items-center justify-center'>
+    <div className={`flex flex-col lg:block items-center justify-center min-h-[${long?'100vh':''}]`}>
         <div className='mt-20 mb-[10vh]  lg:text-center'><h1 className='text-5xl font-bold'>Bizimle İletişime Geçin</h1></div>
 
         <div className='flex lg:flex-row flex-col gap-40 justify-between mt-10 mx-[10vw] lg:mx-[20vw]'>

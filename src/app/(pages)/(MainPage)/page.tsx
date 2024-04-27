@@ -3,10 +3,11 @@ import './index.css'
 import OpacityCover from '@/components/SubComponents/Main/OpacityCover'
 import { MotionDiv } from '@/utils/use-client'
 import Hero from '@/components/MainComponents/Hero'
-import { longText, marbleTypes, sliderImages } from '@/constants/constants'
+import { longText, marbleTypes, responsiveType, sliderImages } from '@/constants/constants'
 import Portfolio from '@/components/MainComponents/Portfolio'
 import Slider from '@/components/SubComponents/Slider'
 import Video from '@/components/MainComponents/Video'
+import Carousel from 'react-multi-carousel'
 
 
 
@@ -16,7 +17,25 @@ const MainPage = () => {
 
 <div className='h-[100vh] pb-5 relative w-full'>
   {/* buraya random resim gelcek */}
-  <img src={sliderImages[Math.floor((Math.random() * sliderImages.length))]} className='object-cover w-full h-full' alt="" />
+  <div className="flex items-center justify-center w-full overflow-visible">
+        <Slider
+        sliderImages={sliderImages}
+        res={responsiveType.singleElement}
+        text={true}
+        sliderClass="w-full overflow-visible"
+        imgStyle='w-full h-[92vh]'
+        carouselProps={{
+          ssr:true,
+          autoPlay:true,
+          autoPlaySpeed:2000,
+          infinite:true,
+          showDots:false,
+          renderButtonGroupOutside:false,
+          arrows:false
+        }}
+      >
+    </Slider>
+    </div>
 </div>
       
     <div className='min-h-[100vh] pb-10 relative'>
@@ -29,19 +48,32 @@ const MainPage = () => {
 
     <div className='relative'>
       <h1 className='text-6xl py-20'>ZARİF TASARIMLAR</h1> 
-      <div className='flex justify-center gap-10 pb-40 items-center overflow-visible'>
-        <Slider />
+      <div className='flex justify-center gap-10 pb-40  items-center overflow-visible'>
+        <Slider sliderImages={sliderImages} res={responsiveType.threeElement}         
+        sliderClass="w-full overflow-visible"
+        imgStyle='w-[33vw] h-[80vh] rounded border border-white'
+        carouselProps={{
+          ssr:true,
+          autoPlay:true,
+          autoPlaySpeed:1500,
+          infinite:true,
+          showDots:true,
+          renderButtonGroupOutside:true,
+          arrows:true
+        }}
+        />
       </div>
       <div className="secondary-image absolute top-0 left-0 right-0 bottom-0 z-[-1]">
         <OpacityCover />
       </div>
     </div>
 
-    <Video />
+    
 
 
     <Portfolio />
 
+    <Video />
     
     <div className='flex flex-col-reverse lg:flex-row justify-around items-center py-20 overflow-clip relative'>
         <MotionDiv className='w-full lg:w-2/4' 
@@ -68,6 +100,7 @@ const MainPage = () => {
         </div>
     </div>
 
+    
 
     </div>
   )

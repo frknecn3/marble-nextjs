@@ -1,7 +1,13 @@
+import { CarouselProps } from "react-multi-carousel"
+
 type NavbarElement={
     value:string
     label:string
 }
+
+export function random(min:number, max:number) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
 export const NavbarElementsArray:NavbarElement[] = [
     {
@@ -96,3 +102,56 @@ Amacımız, yaratıcı mimarlar, iç mekan tasarımcıları, inşaat profesyonel
 Porta Marble olarak, kalite, güvenilirlik ve müşteri memnuniyetini en üst düzeyde tutmayı taahhüt ediyoruz. Küresel pazarda rekabet ederken, sürdürülebilir üretim yöntemleri ve çevreye duyarlılık da önceliklerimiz arasında yer alıyor
 
 Mermerin gücü ve güzellikle buluştuğu yerde, Porta Marble olarak sizleri ağırlamaktan mutluluk duyarız`
+
+export const responsiveType = {
+    threeElement:{
+        
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5,
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3,
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2,
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+      }
+    }
+    ,
+    singleElement:{
+        
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 1,
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 1,
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 1,
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+      }
+    }
+  };
+
+  export type newCarouselProps = Omit<CarouselProps,'responsive'|'children'>
+
+  export const imageTexts = [
+    'Mermer hiç bu kadar güzel olmamıştı.',
+    'İhtişamlı ve gösterişli.',
+    'Estetiğiyle büyüleyen mermer dokunuşları.',
+    'Gözlerinizi alamayacağınız bir şölen.'
+  ]

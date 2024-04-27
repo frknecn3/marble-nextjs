@@ -16,7 +16,7 @@ const Video = (props: Props) => {
       </div>
 
       <div className="flex items-center h-full justify-center">
-        <Contact />
+        <Contact long={false}/>
       </div>
 
       

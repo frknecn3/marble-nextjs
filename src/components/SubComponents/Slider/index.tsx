@@ -1,6 +1,7 @@
 'use client'
-import { sliderImages } from "@/constants/constants";
+import { imageTexts, newCarouselProps, random } from "@/constants/constants";
 import Carousel from "react-multi-carousel";
+import {CarouselProps} from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const responsive = {
@@ -22,29 +23,34 @@ const responsive = {
     items: 1
   }
 };
-const Slider = ()=>{
+
+const Slider = ({sliderImages,res=responsive,imgStyle,sliderClass,carouselProps,text=false}:{sliderImages:string[],res?:any,imgStyle?:string,sliderClass?:string,carouselProps?:newCarouselProps,text?:boolean})=>{
   return(
     
-          <div className="flex items-center justify-center w-full overflow-visible">
+          <div className="flex items-center justify-center w-full relative overflow-visible">
             <Carousel
-          responsive={responsive}
-          className="w-full overflow-visible"
-          autoPlay={true}
-          autoPlaySpeed={1500}
-          infinite={true}
-          ssr={true}
-          showDots={true}
-          renderDotsOutside={true}
-          pauseOnHover={true}
+          responsive={res}
+          className={sliderClass}
+          {...carouselProps}
         >
           {sliderImages.map((item,i)=>(
-            <div className="flex justify-center p-1 transition-all overflow-visible" key={i}>
-              <img src={item}  alt={`kitchen marble ${i}`} className="h-[80vh]  w-[100vw] md:w-[50vw] lg:w-[33vw] border overflow-visibleoverflow-visible" />
-            </div>
+            <div className="flex justify-center transition-all overflow-visible" key={i}>
+              <img src={item}  alt={`kitchen marble ${i}`} className={`${imgStyle}`} />
+              {
+                text&&
+              <>
+              <div className=" bg-black bg-opacity-50 p-10 right-16 bottom-16 rounded-xl absolute ">
+                <h1 className="text-4xl font-bold" style={{textShadow:'0px 2px 2px rgba(0,0,0,0.8)'}}>{imageTexts[random(0,imageTexts.length-1)]}</h1>
+              </div>
+              <img src="/images/logo/pm2.png" alt="porta marble logo" className="w-[150px] h-[150px] absolute top-16 right-16 bg-black p-4 bg-opacity-10 opacity-50 rounded-xl" />
+              </>
+              }
+              
+            </div>  
               
           ))}
         </Carousel>
-          </div>
+        </div>
 
   );
   }
