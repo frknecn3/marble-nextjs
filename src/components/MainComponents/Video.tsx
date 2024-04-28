@@ -3,8 +3,8 @@
 import { Suspense } from "react"
 import OpacityCover from "../SubComponents/Main/OpacityCover"
 import { motion } from "framer-motion"
-import Contact from "@/app/(pages)/contact/page"
 import Image from "next/image"
+import { Contact } from "@/app/(pages)/contact/page"
 
 type Props = {}
 

@@ -7,8 +7,9 @@ type Props = {
   long:boolean
 }
 
-const page = ({long}: Props) => {
-  return (<div className={`flex flex-col lg:block items-center justify-center ${long&&'min-h-[100vh]'}`}>
+export const Contact = ({long}: Props) => {
+  return(
+    <div className={`flex flex-col lg:block items-center justify-center ${long&&'min-h-[100vh]'}`}>
   <div className='mt-20 mb-[10vh]  lg:text-center'><h1 className='text-5xl font-bold'>Bizimle İletişime Geçin</h1></div>
 
   <div className='flex lg:flex-row flex-col gap-40 justify-between mt-10 mx-[10vw] lg:mx-[20vw]'>
@@ -34,6 +35,12 @@ const page = ({long}: Props) => {
   </div>
   
 </div>
+  )
+}
+
+const page = () => {
+  return (
+    <Contact long={true}/>
   )
 }
 
