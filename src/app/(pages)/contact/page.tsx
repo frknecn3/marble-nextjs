@@ -6,7 +6,7 @@ import { FiMail } from 'react-icons/fi'
 
 const Contact = ({long=true}:{long:boolean}) => {
   return (
-    <div className={`flex flex-col lg:block items-center justify-center min-h-[${long?'100vh':''}]`}>
+    <div className={`flex flex-col lg:block items-center justify-center ${long?'min-h-[100vh]':'min-h-0'}`}>
         <div className='mt-20 mb-[10vh]  lg:text-center'><h1 className='text-5xl font-bold'>Bizimle İletişime Geçin</h1></div>
 
         <div className='flex lg:flex-row flex-col gap-40 justify-between mt-10 mx-[10vw] lg:mx-[20vw]'>
