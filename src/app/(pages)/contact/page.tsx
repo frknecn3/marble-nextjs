@@ -4,7 +4,11 @@ import { CiMail } from 'react-icons/ci'
 import { FaWhatsapp } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi'
 
-const Contact = ({long=true}:{long:boolean}) => {
+interface Props {
+  long:boolean
+}
+
+const Contact = ({long=true}:Props) => {
   return (
     <div className={`flex flex-col lg:block items-center justify-center ${long&&'min-h-[100vh]'}`}>
         <div className='mt-20 mb-[10vh]  lg:text-center'><h1 className='text-5xl font-bold'>Bizimle İletişime Geçin</h1></div>
