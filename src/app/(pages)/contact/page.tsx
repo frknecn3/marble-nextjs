@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 
 
-const Contact = ({long}:{long?:boolean}) => {
+const Contact = ({long}) => {
   return (
     <div className={`flex flex-col lg:block items-center justify-center ${long&&'min-h-[100vh]'}`}>
         <div className='mt-20 mb-[10vh]  lg:text-center'><h1 className='text-5xl font-bold'>Bizimle İletişime Geçin</h1></div>
